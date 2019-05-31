@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if users %}
+    {% for u in users %}
+    <p>{{u.first_name}}</p>
+    {% endfor %}
+    {% else %}
+    <p> no users</p>
+    {% endif %}
+  </body>
+</html>
